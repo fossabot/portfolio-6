@@ -1,0 +1,13 @@
+# Log file
+*.log
+
+# Project Files
+.classpath
+.project
+.settings
+
+# Cache Files
+*.cache
+
+# Project docs
+docs
