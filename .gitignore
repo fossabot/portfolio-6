@@ -9,5 +9,5 @@
 # Cache Files
 *.cache
 
-# Project docs
-docs
+# node
+node_modules

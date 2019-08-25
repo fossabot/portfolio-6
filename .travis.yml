@@ -1,9 +1,37 @@
 ---
+language: node_js
+sudo: false
+install: skip
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_API_KEY
-  keep_history: true
-  on:
-    branch: master
+services:
+  - docker
+
+cache:
+  directories:
+    - docker-cache
+    - node_modules
+
+before_script:
+  - |
+    filename=docker-cache/saved_images.tar
+    if [[ -f "$filename" ]]; then docker load < "$filename"; fi
+    mkdir -p docker-cache
+    docker pull jdkato/vale:latest
+    docker save -o "$filename" jdkato/vale:latest
+  - npm install
+
+script:
+  - docker run --rm -it -v "${PWD}:/docs:ro" -w /docs jdkato/vale:latest --sort --config /.vale.ini $(cat .valerc)
+  - npm run validate-pkg
+  - npm run lint-yml
+  - npm run lint-js
+  - npm run stylelint-css
+  - npm run prettier-code
+
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_API_KEY
+#  keep_history: true
+#  on:
+#    branch: master

@@ -1,0 +1,131 @@
+{
+  "name": "tomerfi.github.io",
+  "version": "2019.8.25",
+  "description": "My portfolio.",
+  "keywords": [
+    "portfolio",
+    "open-source",
+    "tutorials",
+    "docker-images"
+  ],
+  "homepage": "https://portfolio.tomfi.info",
+  "bugs": {
+    "url": "https://github.com/TomerFi/tomerfi.github.io.git"
+  },
+  "license": "CCA 3.0",
+  "author": {
+    "name": "Tomer Figenblat",
+    "email": "tomer.figenblat@gmail.com",
+    "url": "https://github.com/TomerFi"
+  },
+  "contributors": [],
+  "engines": {},
+  "files": [],
+  "directories": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomerFi/tomerfi.github.io.git"
+  },
+  "scripts": {
+    "lint-js": "eslint --report-unused-disable-directives .",
+    "lint-js:fix": "eslint --report-unused-disable-directives --fix .",
+    "lint-js-no-inline": "eslint --no-inline-config --report-unused-disable-directives .",
+    "lint-js-no-inline:fix": "eslint --no-inline-config --report-unused-disable-directives --fix .",
+    "prettier-code": "prettier --check **/*.{html,css,scss}",
+    "prettier-code:fix": "prettier --write **/*.{html,css,scss}",
+    "stylelint-css": "stylelint **/*.{html,css,scss}",
+    "stylelint-css:fix": "stylelint --fix **/*.{html,css,scss}",
+    "validate-pkg": "pjv --filenmae package.json --spec npm --warnings --recommendations",
+    "lint-yml": "yamllint --ignore=node_modules/**/*.{yaml,yml} --ignore=vale/**/*.{yaml,yml} **/*.{yaml,yml}"
+  },
+  "dependencies": {
+    "eslint": "6.2.2",
+    "eslint-config-google": "0.13.0",
+    "eslint-plugin-import": "2.18.2",
+    "package-json-validator": "0.6.3",
+    "prettier": "1.18.2",
+    "stylelint": "10.1.0",
+    "stylelint-scss": "3.9.4",
+    "stylelint-config-recommended": "2.2.0",
+    "stylelint-config-recommended-scss": "3.3.0",
+    "stylelint-config-standard": "18.3.0",
+    "yaml-lint": "1.2.4"
+  },
+  "private": true,
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "google",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "guard-for-in": 0,
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        2,
+        "windows"
+      ],
+      "max-len": 0,
+      "new-cap": [
+        2,
+        {
+          "capIsNew": false
+        }
+      ],
+      "no-invalid-this": 0,
+      "no-var": 0,
+      "one-var": 0,
+      "prefer-rest-params": 0,
+      "require-jsdoc": 0,
+      "valid-jsdoc": 0
+    }
+  },
+  "prettier": {
+    "endOfLine": "crlf",
+    "jsxBracketSameLine": true,
+    "quoteProps": "preserve",
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-recommended",
+      "stylelint-config-recommended-scss",
+      "stylelint-config-standard"
+    ],
+    "rules": {
+      "at-rule-empty-line-before": null,
+      "at-rule-no-unknown": null,
+      "block-closing-brace-newline-after": null,
+      "declaration-block-no-duplicate-properties": null,
+      "declaration-block-no-shorthand-property-overrides": null,
+      "declaration-colon-newline-after": null,
+      "font-family-no-missing-generic-family-keyword": null,
+      "indentation": 4,
+      "no-descending-specificity": null,
+      "no-duplicate-selectors": null,
+      "scss/at-rule-no-unknown": null,
+      "value-list-comma-newline-after": null
+    }
+  }
+}
