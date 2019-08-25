@@ -3,13 +3,15 @@ language: node_js
 sudo: false
 install: skip
 
+node_js:
+  - 10
+
 services:
   - docker
 
 cache:
   directories:
     - docker-cache
-    - .npm
     - node_modules
 
 before_script:
@@ -19,8 +21,7 @@ before_script:
     mkdir -p docker-cache
     docker pull jdkato/vale:latest
     docker save -o "$filename" jdkato/vale:latest
-  - npm install npm@6.9.0
-  - npm install
+  - npm install -g
 
 script:
   - docker run --rm -it -v "${PWD}:/docs:ro" -w /docs jdkato/vale:latest --sort --config /.vale.ini $(cat .valerc)
