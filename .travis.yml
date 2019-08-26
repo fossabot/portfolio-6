@@ -49,10 +49,10 @@ script:
   - npm run stylelint-css
   - npm run prettier-code
 
-#deploy:
-#  provider: pages
-#  skip_cleanup: true
-#  github_token: $GITHUB_API_KEY
-#  keep_history: true
-#  on:
-#    branch: master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_API_KEY
+  keep_history: true
+  on:
+    branch: master
