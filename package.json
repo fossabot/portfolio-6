@@ -101,8 +101,6 @@
   },
   "prettier": {
     "endOfLine": "crlf",
-    "jsxBracketSameLine": true,
-    "quoteProps": "preserve",
     "singleQuote": true,
     "tabWidth": 4,
     "trailingComma": "all"
