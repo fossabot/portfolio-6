@@ -11,3 +11,9 @@
 
 # node
 node_modules
+
+# travis
+docker-cache
+
+# archive
+*.tar
