@@ -17,6 +17,7 @@ cache:
   directories:
     - docker-cache
     - node_modules
+    - .npm
 
 before_script:
   - |
