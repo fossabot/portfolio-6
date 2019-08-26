@@ -27,20 +27,20 @@ before_script:
 script:
   - >
     docker run --rm -it -v "${PWD}:/docs:ro" -w /docs jdkato/vale:latest
-      --sort
-      --config /.vale.ini
-      $(cat .valerc)
+    --sort
+    --config /.vale.ini
+    $(cat .valerc)
   - npm run validate-pkg
   - npm run lint-yml
   - >
     docker run -v "${PWD}:/site:ro" 18fgsa/html-proofer:latest
-      --empty-alt-ignore
-      --check-favicon
-      --check-img-http
-      --enforce-https
-      --only-4xx
-      --file-ignore "/node_modules/"
-      /site
+    --empty-alt-ignore
+    --check-favicon
+    --check-img-http
+    --enforce-https
+    --only-4xx
+    --file-ignore "/node_modules/"
+    /site
   - npm run lint-js
   - npm run stylelint-css
   - npm run prettier-code
