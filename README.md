@@ -16,4 +16,4 @@
 [travis-build-status]: https://travis-ci.org/TomerFi/tomerfi.github.io.svg?branch=master
 [visit-my-portfolio]: https://img.shields.io/badge/Visit-My%20Portfolio-blueviolet?style=for-the-badge&logo=HTML5
 [package-json-version-master]: https://img.shields.io/github/package-json/v/tomerfi/tomerfi.github.io/master
-[package-json-version-ghpages]: https://img.shields.io/github/package-json/v/tomerfi/tomerfi.github.io/ghpages
+[package-json-version-ghpages]: https://img.shields.io/github/package-json/v/tomerfi/tomerfi.github.io/gh-pages
