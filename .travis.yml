@@ -20,13 +20,15 @@ before_script:
     if [[ -f "$filename" ]]; then docker load < "$filename"; fi
     mkdir -p docker-cache
     docker pull jdkato/vale:latest
-    docker save -o "$filename" jdkato/vale:latest
+    docker pull 18fgsa/html-proofer:latest
+    docker save -o "$filename" jdkato/vale:latest 18fgsa/html-proofer:latest
   - npm install
 
 script:
   - docker run --rm -it -v "${PWD}:/docs:ro" -w /docs jdkato/vale:latest --sort --config /.vale.ini $(cat .valerc)
   - npm run validate-pkg
   - npm run lint-yml
+  - docker run -v "${PWD}:/site:ro" 18fgsa/html-proofer:latest --check-favicon --check-img-http --enforce-https --file-ignore "/node_modules/" /site
   - npm run lint-js
   - npm run stylelint-css
   - npm run prettier-code
