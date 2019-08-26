@@ -17,6 +17,7 @@ cache:
   directories:
     - docker-cache
     - node_modules
+    - .npm
 
 before_script:
   - |
@@ -55,4 +56,4 @@ deploy:
   github_token: $GITHUB_API_KEY
   keep_history: true
   on:
-    branch: master
+    branch: dev
