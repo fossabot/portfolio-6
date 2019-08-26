@@ -21,7 +21,7 @@ before_script:
     mkdir -p docker-cache
     docker pull jdkato/vale:latest
     docker save -o "$filename" jdkato/vale:latest
-  - npm install -g
+  - npm install
 
 script:
   - docker run --rm -it -v "${PWD}:/docs:ro" -w /docs jdkato/vale:latest --sort --config /.vale.ini $(cat .valerc)
