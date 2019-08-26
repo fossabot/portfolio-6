@@ -9,6 +9,10 @@ node_js:
 services:
   - docker
 
+git:
+  depth: 5
+  quiet: true
+
 cache:
   directories:
     - docker-cache
