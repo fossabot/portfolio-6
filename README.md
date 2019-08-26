@@ -1,8 +1,8 @@
 # [![visit-my-portfolio]][0]</br>[![travis-build-status]][1] [![code-style-prettier]][2]
 
-## Development</br>[![package-json-version-master]][3]
+[![package-json-version-master]][3]
 
-## Deployed</br>[![package-json-version-ghpages]][4]
+[![package-json-version-ghpages]][4]
 
 <!-- Real Links -->
 [0]: https://portfolio.tomfi.info
