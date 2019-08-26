@@ -1,5 +1,5 @@
 {
-  "name": "tomerfi.github.io",
+  "name": "tomerfi-portfolio",
   "version": "2019.8.27",
   "description": "My portfolio.",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "homepage": "https://portfolio.tomfi.info",
   "bugs": {
-    "url": "https://github.com/TomerFi/tomerfi.github.io.git"
+    "url": "https://github.com/TomerFi/tomerfi-portfolio.git"
   },
   "license": "CCA 3.0",
   "author": {
@@ -24,7 +24,7 @@
   "directories": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/TomerFi/tomerfi.github.io.git"
+    "url": "https://github.com/TomerFi/tomerfi-portfolio.git"
   },
   "scripts": {
     "lint-js": "eslint --report-unused-disable-directives .",
