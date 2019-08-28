@@ -9,6 +9,7 @@ docutils
 figenblat
 flesch
 gitea
+greenkeeper-badge
 gunning fog
 haskell
 homebrew
