@@ -4,6 +4,13 @@
 
 [![package-json-version-ghpages]][4]
 
+## Acknowledgement and Credits
+
+- [HTML5 UP](https://html5up.net/)
+- [Unsplash](https://unsplash.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [GitHub Corners](http://tholman.com/github-corners/)
+
 <!-- Real Links -->
 [0]: https://portfolio.tomfi.info
 [1]: https://travis-ci.org/TomerFi/portfolio
