@@ -39,7 +39,7 @@
     "lint-yml": "yamllint --ignore=node_modules/**/*.{yaml,yml} --ignore=vale/**/*.{yaml,yml} **/*.{yaml,yml}"
   },
   "dependencies": {
-    "eslint": "6.2.2",
+    "eslint": "6.3.0",
     "eslint-config-google": "0.13.0",
     "eslint-plugin-import": "2.18.2",
     "package-json-validator": "0.6.3",
