@@ -4,6 +4,7 @@ api
 asciidoc
 asciidoctor
 choco
+configs
 css
 docutils
 figenblat
