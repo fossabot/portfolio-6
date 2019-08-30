@@ -38,7 +38,7 @@ script:
   - npm run validate-pkg
   - npm run lint-yml
   - >
-    docker run -v "${PWD}:/site:ro" 18fgsa/html-proofer:latest
+    docker run --rm -v "${PWD}:/site:ro" 18fgsa/html-proofer:latest
     --empty-alt-ignore
     --check-favicon
     --check-img-http
