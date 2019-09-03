@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2019.8.30",
+  "version": "2019.9.3",
   "description": "My portfolio.",
   "keywords": [
     "portfolio",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "eslint": "6.3.0",
-    "eslint-config-google": "0.13.0",
+    "eslint-config-google": "0.14.0",
     "eslint-plugin-import": "2.18.2",
     "package-json-validator": "0.6.3",
     "prettier": "1.18.2",
