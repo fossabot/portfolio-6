@@ -39,12 +39,12 @@
     "lint-yml": "yamllint --ignore=node_modules/**/*.{yaml,yml} --ignore=vale/**/*.{yaml,yml} **/*.{yaml,yml}"
   },
   "dependencies": {
-    "eslint": "6.3.0",
+    "eslint": "6.4.0",
     "eslint-config-google": "0.14.0",
     "eslint-plugin-import": "2.18.2",
     "package-json-validator": "0.6.3",
     "prettier": "1.18.2",
-    "stylelint": "10.1.0",
+    "stylelint": "11.0.0",
     "stylelint-scss": "3.10.1",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-recommended-scss": "3.3.0",
